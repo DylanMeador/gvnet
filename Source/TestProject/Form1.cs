@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using GVNET;
@@ -21,7 +20,7 @@ namespace TestProject
 
 		private void btnAddNode_Click(object sender, EventArgs e)
 		{
-			if (!string.IsNullOrWhiteSpace(txtNode.Text))
+			if (!string.IsNullOrEmpty(txtNode.Text.Trim()))
 			{
 				TestNode newNode = new TestNode(txtNode.Text); 
 				myGraph.AddNode(newNode);
@@ -35,7 +34,7 @@ namespace TestProject
 			if (listBox1.SelectedItem == null || listBox2.SelectedItem == null)
 				return;
 
-			if (listBox1.SelectedItem != listBox2.SelectedItem && !string.IsNullOrWhiteSpace(txtEdge.Text))
+			if (listBox1.SelectedItem != listBox2.SelectedItem && !string.IsNullOrEmpty(txtEdge.Text.Trim()))
 			{
 				TestEdge newEdge = new TestEdge(txtEdge.Text, (TestNode)listBox1.SelectedItem, (TestNode)listBox2.SelectedItem);
 				myGraph.AddEdge(newEdge);
