@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{22E92C4E-9FF0-428B-9FAC-46B694A8B575}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GVNET</RootNamespace>
+    <AssemblyName>GVNET</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\GVNET.xml</DocumentationFile>
+    <NoWarn>1591</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DOTFile.cs" />
+    <Compile Include="DOTKeywordAttribute.cs" />
+    <Compile Include="DottyBuilder.cs" />
+    <Compile Include="Enums\EdgeEnums.cs" />
+    <Compile Include="Enums\GraphEnums.cs" />
+    <Compile Include="GraphManager.cs" />
+    <Compile Include="Interfaces\Edge Interfaces\IEdgeFull.cs" />
+    <Compile Include="Interfaces\Edge Interfaces\IEdgeDetailed.cs" />
+    <Compile Include="Interfaces\Edge Interfaces\IEdgeLabel.cs" />
+    <Compile Include="Interfaces\Edge Interfaces\IEdgeDefined.cs" />
+    <Compile Include="Interfaces\Edge Interfaces\IEdgeSimple.cs" />
+    <Compile Include="Interfaces\Edge Interfaces\IEdgeArrow.cs" />
+    <Compile Include="Interfaces\Edge Interfaces\IEdgeFont.cs" />
+    <Compile Include="Interfaces\Node Interfaces\INodeFull.cs" />
+    <Compile Include="Interfaces\Node Interfaces\INodeDetailed.cs" />
+    <Compile Include="Interfaces\Node Interfaces\INodePolygon.cs" />
+    <Compile Include="Interfaces\Node Interfaces\INodeDefined.cs" />
+    <Compile Include="Interfaces\Node Interfaces\INodeSimple.cs" />
+    <Compile Include="Interfaces\Node Interfaces\INodeFont.cs" />
+    <Compile Include="Interfaces\Graph Interfaces\IGraphFull.cs" />
+    <Compile Include="Interfaces\Graph Interfaces\IGraphEdgeControl.cs" />
+    <Compile Include="Interfaces\Graph Interfaces\IGraphLayout.cs" />
+    <Compile Include="Interfaces\Graph Interfaces\IGraphTitle.cs" />
+    <Compile Include="Interfaces\Graph Interfaces\IGraphDefined.cs" />
+    <Compile Include="Interfaces\Graph Interfaces\IGraphSimple.cs" />
+    <Compile Include="Interfaces\Graph Interfaces\IGraphFont.cs" />
+    <Compile Include="Interfaces\Graph Interfaces\IGraph.cs" />
+    <Compile Include="Interfaces\Edge Interfaces\IEdge.cs" />
+    <Compile Include="Interfaces\IFontScheme.cs" />
+    <Compile Include="Interfaces\Node Interfaces\INode.cs" />
+    <Compile Include="Enums\NodeEnums.cs" />
+    <Compile Include="PropConverter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
