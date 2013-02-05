@@ -7,11 +7,11 @@ using System.Text;
 using System.Windows.Forms;
 using GVNET;
 
-namespace TestProject
+namespace SampleProject
 {
 	public partial class Form1 : Form
 	{
-		private TestGraph myGraph = new TestGraph("Test Graph");
+		private SampleGraph myGraph = new SampleGraph("Test Graph");
 
 		public Form1()
 		{
@@ -22,7 +22,7 @@ namespace TestProject
 		{
 			if (!string.IsNullOrEmpty(txtNode.Text.Trim()))
 			{
-				TestNode newNode = new TestNode(txtNode.Text); 
+				SampleNode newNode = new SampleNode(txtNode.Text); 
 				myGraph.AddNode(newNode);
 				listBox1.Items.Add(newNode);
 				listBox2.Items.Add(newNode);
@@ -36,7 +36,7 @@ namespace TestProject
 
 			if (listBox1.SelectedItem != listBox2.SelectedItem && !string.IsNullOrEmpty(txtEdge.Text.Trim()))
 			{
-				TestEdge newEdge = new TestEdge(txtEdge.Text, (TestNode)listBox1.SelectedItem, (TestNode)listBox2.SelectedItem);
+				SampleEdge newEdge = new SampleEdge(txtEdge.Text, (SampleNode)listBox1.SelectedItem, (SampleNode)listBox2.SelectedItem);
 				myGraph.AddEdge(newEdge);
 			}
 		}

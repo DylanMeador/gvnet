@@ -3,30 +3,30 @@ using System.Collections.Generic;
 using System.Text;
 using GVNET;
 
-namespace TestProject
+namespace SampleProject
 {
-	class TestEdge : IEdge
+	class SampleEdge : IEdge
 	{
 		private string _Name;
-		private TestNode _Source;
-		private TestNode _Drain;
+		private SampleNode _Source;
+		private SampleNode _Drain;
 
 		public string Name
 		{
 			get { return _Name; }
 		}
 
-		public TestNode Source
+		public SampleNode Source
 		{
 			get { return _Source; }
 		}
 
-		public TestNode Drain
+		public SampleNode Drain
 		{
 			get { return _Drain; }
 		}
 
-		public TestEdge(string name, TestNode source, TestNode drain)
+		public SampleEdge(string name, SampleNode source, SampleNode drain)
 		{
 			_Name = name;
 			_Source = source;

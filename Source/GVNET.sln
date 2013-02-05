@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GVNET", "GVNET\GVNET.csproj", "{22E92C4E-9FF0-428B-9FAC-46B694A8B575}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "TestProject\TestProject.csproj", "{9A864450-9BE3-452D-9C97-63E22E480503}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleProject", "TestProject\SampleProject.csproj", "{9A864450-9BE3-452D-9C97-63E22E480503}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

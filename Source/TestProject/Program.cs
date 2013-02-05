@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 
-namespace TestProject
+namespace SampleProject
 {
 	static class Program
 	{

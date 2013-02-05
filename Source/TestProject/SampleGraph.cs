@@ -3,40 +3,40 @@ using System.Collections.Generic;
 using System.Text;
 using GVNET;
 
-namespace TestProject
+namespace SampleProject
 {
-	class TestGraph : IGraph
+	class SampleGraph : IGraph
 	{
 		private string _Name;
-		private List<TestNode> _MyNodes = new List<TestNode>();
-		private List<TestEdge> _MyEdges = new List<TestEdge>();
+		private List<SampleNode> _MyNodes = new List<SampleNode>();
+		private List<SampleEdge> _MyEdges = new List<SampleEdge>();
 
 		public string Name
 		{
 			get { return _Name; }
 		}
 
-		public List<TestNode> MyNodes
+		public List<SampleNode> MyNodes
 		{
 			get { return _MyNodes; }
 		}
 
-		public List<TestEdge> MyEdges
+		public List<SampleEdge> MyEdges
 		{
 			get { return _MyEdges; }
 		}
 
-		public TestGraph(string name)
+		public SampleGraph(string name)
 		{
 			_Name = name;
 		}
 
-		public void AddNode(TestNode nodeToAdd)
+		public void AddNode(SampleNode nodeToAdd)
 		{
 			_MyNodes.Add(nodeToAdd);
 		}
 
-		public void AddEdge(TestEdge edgeToAdd)
+		public void AddEdge(SampleEdge edgeToAdd)
 		{
 			_MyEdges.Add(edgeToAdd);
 			edgeToAdd.Source.AddEdge(edgeToAdd);

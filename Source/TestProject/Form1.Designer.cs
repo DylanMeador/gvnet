@@ -1,4 +1,4 @@
-﻿namespace TestProject
+﻿namespace SampleProject
 {
 	partial class Form1
 	{

@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Text;
 using GVNET;
 
-namespace TestProject
+namespace SampleProject
 {
-	class TestNode : INode
+	class SampleNode : INode
 	{
 		private string _Name;
-		private List<TestEdge> _MyEdges = new List<TestEdge>();
+		private List<SampleEdge> _MyEdges = new List<SampleEdge>();
 
 		public string Name
 		{
@@ -16,17 +16,17 @@ namespace TestProject
 			set { _Name = value; }
 		}
 
-		public List<TestEdge> MyEdges
+		public List<SampleEdge> MyEdges
 		{
 			get { return _MyEdges; }
 		}
 
-		public TestNode(string name)
+		public SampleNode(string name)
 		{
 			_Name = name;
 		}
 
-		public void AddEdge(TestEdge edgeToAdd)
+		public void AddEdge(SampleEdge edgeToAdd)
 		{
 			_MyEdges.Add(edgeToAdd);
 		}
